@@ -18,7 +18,7 @@ export const project = [
     desc: "I built a full stack social media with MERN stack to enhance my web dev skills especially my backend as I am still starting to break into the backend after being a frontend for a long while.",
     status: {
       stats: "In-progress",
-      color: "#d3d3d3",
+      color: "#FF8D28",
     },
   },
 ];
