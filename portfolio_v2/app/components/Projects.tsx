@@ -12,11 +12,14 @@ const Projects = () => {
         >
           {/* Project Info */}
           <div className="flex mt-5">
-            <Image
+            {/* <Image
               src={proj.img}
               alt={proj.title}
               className="w-[100px] h-[100px] object-cover rounded-[10px]"
-            />
+            /> */}
+            <p className="w-[100px] h-[100px] text-[14px] text-center leading-[100px] bg-black/30 rounded-[10px]">
+              Comming Soon
+            </p>
             <div className="md:flex flex-col ml-5">
               <h3 className="text-3xl">{proj.title}</h3>
             </div>

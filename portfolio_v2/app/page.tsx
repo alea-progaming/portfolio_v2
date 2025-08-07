@@ -15,7 +15,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-11/12 m-auto my-5 justify-center">
+    <div className="flex flex-col w-11/12 m-auto my-5 justify-center font-lekton">
       {/* Header Container */}
       <div className="p-7 rounded-[10px] border border-black/10 dark:border-white/10 outline-[0.5px] outline-offset-4 outline-black/10 dark:outline-white/10 text-base">
         {/* Profile, h1, contact and resume */}
@@ -28,7 +28,7 @@ export default function Home() {
               height={120}
               className="rounded-full"
             />
-            <h1 className="text-5xl font-medium">Hi, I'm Mika!</h1>
+            <h1 className="text-5xl font-bold">Hi, I'm Mika!</h1>
           </div>
           <div className="w-full md:flex gap-4 justify-between">
             <div className="flex items-center gap-2 text-white/40">
@@ -36,7 +36,12 @@ export default function Home() {
               <p>Quezon City, Metro Manila, Philippines</p>
             </div>
             <div className="flex gap-2 md:mt-0 mt-4 font-bold text-lg">
-              <Link href="mailto:mikaela.programming@gmail.com">Contact</Link>
+              <a
+                href="mailto:mikaela.programming@gmail.com"
+                className="hover:underline"
+              >
+                Contact
+              </a>
               <span>|</span>
               <a
                 href="/resume.pdf"
@@ -69,7 +74,7 @@ export default function Home() {
       </div>
 
       {/* Projects and Skills */}
-      <div className="flex md:flex-row space-x-5 flex-col md:h-[500px]">
+      <div className="flex md:flex-row space-x-5 flex-col md:h-[600px]">
         {/* Projects */}
         <div className="w-[100%] mt-5 p-5 rounded-[10px] border border-black/10 dark:border-white/10 outline-[0.5px] outline-offset-4 outline-black/10 dark:outline-white/10 md:overflow-y-scroll custom-scrollbar">
           <div className="text-start">
@@ -77,7 +82,7 @@ export default function Home() {
               size={64}
               className="bg-white/10 rounded-[10px] p-2.5 inline-block align-middle"
             />
-            <h3 className="inline-block ml-2 text-4xl">Projects</h3>
+            <h3 className="inline-block ml-2 text-4xl font-bold">Projects</h3>
           </div>
           {/* Project Containers */}
           <Projects />
@@ -89,7 +94,7 @@ export default function Home() {
               size={64}
               className="bg-white/10 rounded-[10px] p-2.5 inline-block align-middle"
             />
-            <h3 className="inline-block ml-2 text-4xl">Tech Stack</h3>
+            <h3 className="inline-block ml-2 text-4xl font-bold">Tech Stack</h3>
           </div>
           <TechStack />
         </div>
@@ -101,7 +106,7 @@ export default function Home() {
             size={64}
             className="bg-white/10 rounded-[10px] p-2.5 inline-block align-middle"
           />
-          <h3 className="inline-block ml-2 text-4xl">About Me</h3>
+          <h3 className="inline-block ml-2 text-4xl font-bold">About Me</h3>
           <div className="text-start flex md:flex-row md:justify-between md:items-center flex-col">
             <p className="mt-5 text-lg md:w-4/6">
               Hi, I’m Mika — a 22-year-old web developer from Metro Manila. I
@@ -110,7 +115,7 @@ export default function Home() {
               horror games.
             </p>
             <div className="mt-5">
-              <h4 className="text-3xl">Connect with Me</h4>
+              <h4 className="text-3xl">Connect with Me:</h4>
               {/* Social links  */}
               <div className="flex gap-4 mt-5 text-lg">
                 <Link href="mailto:mikaela.purugganan@gmail.com">
