@@ -28,7 +28,7 @@ export default function Home() {
               height={120}
               className="rounded-full"
             />
-            <h1 className="text-5xl font-bold">Hi, I'm Mika!</h1>
+            <h1 className="text-5xl font-bold">Hi, I&apos;m Mika!</h1>
           </div>
           <div className="w-full md:flex gap-4 justify-between">
             <div className="flex items-center gap-2 text-white/40">

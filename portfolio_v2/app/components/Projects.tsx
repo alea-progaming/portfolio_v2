@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { project } from "@/app/assets/projects";
 
 const Projects = () => {
